@@ -24,7 +24,6 @@ class Command(BaseCommand):
         self.stdout.write('NFTs loaded successfully!')
         self.stdout.write('Data population process completed.')
 
-#belumfix
     def load_collections(self):
         self.stdout.write('Loading collections from CSV')
         if Collection.objects.count() >= self.total_collections_in_csv:
